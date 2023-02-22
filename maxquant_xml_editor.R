@@ -14,7 +14,7 @@ file_type = ".raw"
 bool = FALSE
 fraction = 32767
 
-annotation$filepaths <- paste0(raw_folder,annotation$Raw.File,file_type)
+annotation$filepaths <- paste0(raw_folder,annotation[,1],file_type)
 
 x <- read_xml("new.xml")
 
